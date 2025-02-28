@@ -1,122 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenue sur mon site web</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Bienvenue sur mon site web</title>
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #CCD2D6;
-        }
+		
+	/*  	body { 
+         	font-family: Arial, sans-serif; 
+          	margin: 0; 
+        	padding: 0;
+         	background-color: #CCD2D6;
+       		} 
+		*/
+        	body {
+            	font-family: 'Orbitron', sans-serif;
+            	margin: 0;
+            	padding: 0;
+            	background: linear-gradient(135deg, #f5f5f5, #dcdcdc); /* Dégradé de fond */
+            	color: black;
+            	overflow-x: hidden;
+            	min-height: 100vh;
+            	display: flex;
+            	flex-direction: column;
+           	 justify-content: space-between;
+            	align-items: center;
+	            position: relative;
+            	overflow: hidden;
+        	}
+         	header {
+            	background-color: #334654;
+            	color: #248FDE;
+            	padding: 20px 0;
+            	text-align: center;
+        	}
 
-        header {
-            background-color: #334654;
-            color: #248FDE;
-            padding: 20px 0;
-            text-align: center;
-        }
+       		main {
+            	padding: 20px;
+        	}
 
-        main {
-            padding: 20px;
-        }
+        	section {
+            	background-color: #fff;
+            	padding: 20px;
+            	margin-bottom: 20px;
+           	border-radius: 5px;
+           	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        	}
 
-        section {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+        	footer {
+            	background-color: #333;
+            	color: #fff;
+            	padding: 10px 0;
+            	text-align: center;
+            	position: fixed;
+            	bottom: 0;
+            	width: 100%;
+        	}
+   		.dropdown-menu {
+	   	background-color: #616a6b;
+		transition: transform 0.15s ease-out, background 0.15s ease-out;
+		}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-	 nav {
-            display: table;
-            justify-content: center;
-            gap: 15px;
-            padding: 15px 0; /* Augmente la marge pour descendre le menu */
-            margin-top: 10px; /* Ajout pour descendre le menu */
-        }
-	nav a.active,
-        nav a:hover {
-            transform: scale(1.1);
-            background: rgba(0, 0, 0, 0.4);
-            color: white;
-}
-
-        nav a {
-            color: black;
-            text-decoration: none;
-            padding: 6px 12px;
-            border-radius: 50px;
-            background: rgba(0, 0, 0, 0.2);
-            transition: transform 0.15s ease-out, background 0.15s ease-out; /* Transition plus rapide */
-            font-size: 0.9em;
-        }
-   	.dropdown-menu {
-	    background-color: #616a6b;
-	}
-
-	.dropdown-item {
+		.dropdown-item {
 	    text-color: #a2d9ce;
-	}
-    </style>
+		}
+    	</style>
 
-</head>
-<body>
-    <header>
-        <h1>Bienvenue sur mon site web</h1>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="services.html">Services</a></li>
-    <li><a class="dropdown-item" href="test.html">A propos</a></li>
-  </ul>
-</div>
+	</head>
+	<body>
+    		<header>
+        		<h1>Bienvenue sur mon site web</h1>
+			<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+  				<ul class="dropdown-menu">
+    					<li><a class="dropdown-item" href="services.html">Services</a></li>
+    					<li><a class="dropdown-item" href="test.html">A propos</a></li>
+  				</ul>
+			</div>
 
-    </header>
+   		 </header>
 
-    <main>
-        <section>
-            <h2>À propos de moi</h2>
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="test.html" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-        </section>
+    	<main>
+        	<section>
+            	<h2>À propos de moi</h2>
+			<div class="card" style="width: 18rem;">
+  				<img src="..." class="card-img-top" alt="...">
+  			<div class="card-body">
+    				<h5 class="card-title">Card title</h5>
+   				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    				<a href="test.html" class="btn btn-primary">Go somewhere</a>
+  			</div>
+			</div>
+       		 </section>
 
-        <section>
-            <h2>Etat des services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Maecenas faucibus mollis interdum.</p>
-        </section>
+        	<section>
+            		<h2>Etat des services</h2>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Maecenas faucibus mollis interdum.</p>
+        	</section>
 
-        <section>
+       		<section>
 
-            <h2>Contactez-moi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Maecenas faucibus mollis interdum.</p>
-        </section>
-    </main>
+            		<h2>Contactez-moi</h2>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Maecenas faucibus mollis interdum.</p>
+        	</section>
+    	</main>
 
-    <footer>
-        <p>&copy; 2025 BastLAB </p>
-    </footer>
-<script src="js/bootstrap.bundle.min.js"></script>
-</body>
+    	<footer>
+       		<p>&copy; 2025 BastLAB </p>
+    	</footer>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
