@@ -64,16 +64,28 @@
             transition: transform 0.15s ease-out, background 0.15s ease-out; /* Transition plus rapide */
             font-size: 0.9em;
         }
+    .dropdown-menu {
+	    background-color: #616a6b;
+	   
+    }
+	    .dropdown-item {
+		     text-color: #a2d9ce;
+	    }
     </style>
 
 </head>
 <body>
     <header>
         <h1>Bienvenue sur mon site web</h1>
-	  <nav>
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Services</a>
-     </nav>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="services.html">Services</a></li>
+    <li><a class="dropdown-item" href="test.html">A propos</a></li>
+  </ul>
+</div>
 
     </header>
 
