@@ -1,0 +1,42 @@
+postmap: dict_ldap_debug: ldap_result ld 0x560233607d90 msgid 2
+postmap: dict_ldap_debug: wait4msg ld 0x560233607d90 msgid 2 (timeout 10000000 usec)
+postmap: dict_ldap_debug: wait4msg continue ld 0x560233607d90 msgid 2 all 1
+postmap: dict_ldap_debug: ** ld 0x560233607d90 Connections:
+postmap: dict_ldap_debug: * host: AD-01.bastlab.local  port: 389  (default)
+postmap: dict_ldap_debug: * from: IP=10.10.0.16:41678
+postmap: dict_ldap_debug:   refcnt: 2  status: Connected
+postmap: dict_ldap_debug:   last used: Tue Apr 22 23:58:41 2025
+postmap: dict_ldap_debug:
+postmap: dict_ldap_debug: ** ld 0x560233607d90 Outstanding Requests:
+postmap: dict_ldap_debug:  * msgid 2,  origid 2, status InProgress
+postmap: dict_ldap_debug:    outstanding referrals 0, parent count 0
+postmap: dict_ldap_debug:   ld 0x560233607d90 request count 1 (abandoned 0)
+postmap: dict_ldap_debug: ** ld 0x560233607d90 Response Queue:
+postmap: dict_ldap_debug:    Empty
+postmap: dict_ldap_debug:   ld 0x560233607d90 response count 0
+postmap: dict_ldap_debug: ldap_chkResponseList ld 0x560233607d90 msgid 2 all 1
+postmap: dict_ldap_debug: ldap_chkResponseList returns ld 0x560233607d90 NULL
+postmap: dict_ldap_debug: ldap_int_select
+postmap: dict_ldap_debug: read1msg: ld 0x560233607d90 msgid 2 all 1
+postmap: dict_ldap_debug: ber_get_next
+postmap: dict_ldap_debug: ber_get_next: tag 0x30 len 16 contents:
+postmap: dict_ldap_debug: ldap_find_request_by_msgid: msgid 2, lr 0x56023360a600 lr->lr_refcnt = 1
+postmap: dict_ldap_debug: read1msg: ld 0x560233607d90 msgid 2 message type search-result
+postmap: dict_ldap_debug: ber_scanf fmt ({eAA) ber:
+postmap: dict_ldap_debug: read1msg: ld 0x560233607d90 0 new referrals
+postmap: dict_ldap_debug: read1msg:  mark request completed, ld 0x560233607d90 msgid 2
+postmap: dict_ldap_debug: request done: ld 0x560233607d90 msgid 2
+postmap: dict_ldap_debug: res_errno: 0, res_error: <>, res_matched: <>
+postmap: dict_ldap_debug: ldap_return_request: lrx 0x56023360a600, lr 0x56023360a600
+postmap: dict_ldap_debug: ldap_return_request: lrx->lr_msgid 2, lrx->lr_refcnt is now 0, lr is still present
+postmap: dict_ldap_debug: ldap_free_request (origid 2, msgid 2)
+postmap: dict_ldap_debug: ldap_free_request_int: lr 0x56023360a600 msgid 2 removed
+postmap: dict_ldap_debug: ldap_do_free_request: asked to free lr 0x56023360a600 msgid 2 refcnt 0
+postmap: dict_ldap_debug: ldap_parse_result
+postmap: dict_ldap_debug: ber_scanf fmt ({iAA) ber:
+postmap: dict_ldap_debug: ber_scanf fmt (}) ber:
+postmap: dict_ldap_debug: ldap_msgfree
+postmap: dict_ldap_debug: ldap_free_connection 1 1
+postmap: dict_ldap_debug: ldap_send_unbind
+postmap: dict_ldap_debug: ber_flush2: 7 bytes to sd 4
+postmap: dict_ldap_debug: ldap_free_connection: actually freed
